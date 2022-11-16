@@ -33,7 +33,15 @@
   height: 200px;
 }
 
+.btn-flex {
+  display: none;
+}
+
 @media (max-width: 500px) {
+  .btn-flex {
+    display: block;
+  }
+
   .flex img {
     height: 100px;
   }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../asset/style/dogRandomstyle.css'
 
 const DogRandom = () => {
-    
+
     const [photos, setPhotos] = useState({ dog: "", adopted: [] })
     const [pass, setPass] = useState(true)
 
@@ -23,6 +23,7 @@ const DogRandom = () => {
     const handleAdopt = () => {
         let adoptedDog = localStorage.getItem("photo")
         setPhotos({ dog: adoptedDog, adopted: [...photos.adopted, { adoptedDog }] })
+        handleChange()
     }
 
     const [count, setCount] = useState(5)
@@ -77,6 +78,11 @@ const DogRandom = () => {
                             <h3>Time Remaining : {count}</h3>
                             <h3>Adopted {photos.adopted.length} dogs :</h3>
                         </div>
+                    </div>
+                    <div className="btn-flex">
+                        <button onClick={() => handleChange()}>left</button>
+                        <button onClick={() => handleAdopt()}>right</button>
+
                     </div>
                     <div className="flex">
                         {
