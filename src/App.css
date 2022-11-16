@@ -3,41 +3,37 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-size: 18px;
 }
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.center > div {
+
+/* .center > div {
   display: flex;
   flex-direction: column;
   gap: 20px;
   text-align: center;
-}
-span,
+} */
 
+span,
 button {
   margin: 0 4px;
 }
-input{
+
+input {
   margin-right: 2px;
   cursor: pointer;
 }
+
 span button {
   padding: 1px 5px;
 }
+
 .purchase {
   width: 50%;
   margin: auto;
 }
 
-button {
-  cursor: pointer;
-}
 .list li {
   margin: 5px 0;
 }
@@ -49,4 +45,9 @@ h2 {
 ul,
 li {
   list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
 }
